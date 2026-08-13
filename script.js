@@ -125,6 +125,7 @@ if (!hasSeenLoader) {
     if (!loader || loader.classList.contains("is-complete")) return;
     loader.classList.add("is-complete");
     document.body.classList.remove("portfolio-is-loading");
+    window.requestAnimationFrame(() => layoutKeywordCloud());
     try {
       sessionStorage.setItem("alice-portfolio-loaded", "true");
     } catch (error) {
