@@ -108,11 +108,18 @@ try {
   hasSeenLoader = false;
 }
 
+const revealBootedPage = () => {
+  window.requestAnimationFrame(() => {
+    document.documentElement.classList.remove("portfolio-booting");
+  });
+};
+
 if (!hasSeenLoader) {
   const siteHeader = document.querySelector(".site-header");
   if (siteHeader) siteHeader.insertAdjacentHTML("afterend", loaderMarkup);
   else document.body.insertAdjacentHTML("afterbegin", loaderMarkup);
   document.body.classList.add("portfolio-is-loading");
+  revealBootedPage();
   const loader = document.querySelector(".portfolio-loader");
   const finishLoading = () => {
     if (!loader || loader.classList.contains("is-complete")) return;
@@ -128,6 +135,8 @@ if (!hasSeenLoader) {
   const loadingDelay = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 720;
   window.addEventListener("load", () => window.setTimeout(finishLoading, loadingDelay), { once: true });
   window.setTimeout(finishLoading, loadingDelay + 1800);
+} else {
+  revealBootedPage();
 }
 
 const cards = document.querySelectorAll(
