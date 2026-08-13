@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LINE Bot 通知管理平台 | Alice Chen</title>
+    <meta
+      name="description"
+      content="Alice Chen 的 LINE Bot 通知管理平台 UI/UX 案例，整理測站、群組、成員、權限與通知規則流程。"
+    />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Alice Chen UI/UX Portfolio" />
+    <meta property="og:title" content="LINE Bot 通知管理平台 | Alice Chen" />
+    <meta
+      property="og:description"
+      content="整理測站、群組、成員、權限與通知規則流程的 UI/UX 案例。"
+    />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alice Chen UI/UX Portfolio 分享預覽圖" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LINE Bot 通知管理平台 | Alice Chen" />
+    <meta
+      name="twitter:description"
+      content="整理測站、群組、成員、權限與通知規則流程的 UI/UX 案例。"
+    />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=prelaunch-audit-20260813" />
+  </head>
+  <body class="case-story-page">
+    <a class="skip-link" href="#case-content">跳到案例內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html?v=site-sync-20260813" aria-label="Alice Chen portfolio home">
+        <span class="brand-mark"><img src="assets/logo-ca-final-transparent.png?v=2" alt="" /></span>
+        <span>Alice Chen</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html?v=site-sync-20260813#work">作品</a>
+        <a href="index.html?v=site-sync-20260813#approach">方法</a>
+        <a href="index.html?v=site-sync-20260813#visual">視覺</a>
+        <a href="index.html?v=site-sync-20260813#about">關於</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" id="top">
+        <div class="case-hero-copy">
+          <a class="back-link" href="index.html?v=site-sync-20260813#work">回到作品</a>
+          <p class="eyebrow">Case Study 03</p>
+          <h1>LINE Bot 通知管理平台</h1>
+          <p class="case-lead">
+            分開測站、群組、成員、權限與通知規則的設定視角，讓註冊、綁定與通知管理不互相打架。
+          </p>
+          <div class="tag-list">
+            <span>通知管理</span>
+            <span>權限流程</span>
+            <span>群組 / 成員</span>
+            <span>Wireflow</span>
+            <span>後台系統</span>
+          </div>
+        </div>
+
+        <div class="case-hero-visual notify-case-visual" aria-label="LINE Bot 通知管理平台流程示意">
+          <div class="notify-flow-board">
+            <span class="flow-step active"></span>
+            <span class="flow-step"></span>
+            <span class="flow-step"></span>
+            <span class="flow-step checked"></span>
+          </div>
+          <div class="notify-list-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="notify-permission-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-anchor-nav chapter-anchor-nav" aria-label="案例章節導覽">
+        <a class="anchor-context" href="#context" data-icon="⌖"><span>專案背景</span></a>
+        <a class="anchor-challenges" href="#challenges" data-icon="!"><span>需求與痛點</span></a>
+        <a class="anchor-strategy" href="#strategy" data-icon="→"><span>設計策略</span></a>
+        <a class="anchor-screens" href="#flows" data-icon="▦"><span>流程與成果</span></a>
+        <a class="anchor-info" href="#project-info" data-icon="i"><span>專案資訊</span></a>
+        <a class="anchor-top" href="#top" data-icon="↑"><span>TOP</span></a>
+      </nav>
+
+      <section class="case-section split-section case-story story-context" id="context" data-step="01" data-icon="⌖">
+        <span class="story-step" aria-hidden="true">01</span>
+        <div>
+          <p class="eyebrow">Context</p>
+          <h2>專案背景</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            LINE Bot 通知管理平台讓管理處主管、人員與公司 PM 設定異常事件通知、群組、使用者與推播範圍。不同角色需要收到對應的測站、群組或物理量通知，避免訊息過多，也避免漏接重要異常。
+          </p>
+          <p>
+            難點在於資料關係交錯：測站群組、測站、使用者群組、使用者、權限與物理量彼此相關。從測站群組進入和從成員列表進入時，使用者想完成的任務不同，畫面也需要換一種說法。
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-challenges" id="challenges" data-step="02" data-icon="!">
+        <span class="story-step" aria-hidden="true">02</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Needs & Pain Points</p>
+          <h2>通知管理的使用痛點</h2>
+          <p>設定對象、通知範圍與權限彼此交錯，使用者需要先知道自己正在從哪個視角操作。</p>
+        </div>
+        <div class="challenge-list">
+          <article>
+            <h3>設定對象容易混淆</h3>
+            <p>測站群組、測站、使用者群組、使用者、權限與物理量彼此相關，使用者容易分不清正在設定的是範圍、對象還是通知項目。</p>
+          </article>
+          <article>
+            <h3>入口視角不同</h3>
+            <p>從測站群組進入，和從群組 / 成員列表進入時，使用者的任務不同，需要明確拆開流程與標題語意。</p>
+          </article>
+          <article>
+            <h3>通知設定容易過載</h3>
+            <p>如果一次顯示太多測站、成員與通知項目，使用者會很難判斷哪些要開、哪些要關。</p>
+          </article>
+          <article>
+            <h3>權限與啟用狀態要清楚</h3>
+            <p>需要用一致的 checkbox、命名與提示文字，讓使用者理解啟用 / 停用、可見範圍與通知對象。</p>
+          </article>
+          <article>
+            <h3>元件一致但流程要分流</h3>
+            <p>不同流程不能混在一起，但表格、列表、搜尋、篩選與保存操作仍要維持一致，讓使用者不用重新學一次。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section split-section case-story story-strategy" id="strategy" data-step="03" data-icon="→">
+        <span class="story-step" aria-hidden="true">03</span>
+        <div>
+          <p class="eyebrow">Design Strategy</p>
+          <h2>設計策略</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            我先用 wireframe / flow 拆解測站、群組、成員、權限與通知規則，並將「測站視角」與「群組成員視角」分成不同入口或 tab。
+          </p>
+          <p>
+            表格支援搜尋與篩選，啟用狀態以 checkbox 呈現，並透過命名與提示文字補足語意。重點是讓每一步都能回答「我在設定誰、設定哪些通知、會影響哪些對象」。
+          </p>
+          <p>
+            流程因此拆成兩種視角：從測站或測站群組出發，管理整體通知範圍；從群組或成員列表出發，管理單一人員可接收的通知。兩者沿用相近元件，但入口、標題與提示文字明確區分。
+          </p>
+          <ul class="strategy-points">
+            <li><strong>分視角：</strong>把測站 / 測站群組與群組 / 成員設定拆成不同入口，避免任務混在一起。</li>
+            <li><strong>少一點壓力：</strong>表格加入搜尋、篩選與 checkbox，避免一次顯示過多通知設定。</li>
+            <li><strong>說清楚：</strong>用命名與提示文字說明目前設定對象、通知範圍與保存結果。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-screens" id="flows" data-step="04" data-icon="▦">
+        <span class="story-step" aria-hidden="true">04</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Key Flows & Outcomes</p>
+          <h2>主要流程、設計重點與成果</h2>
+          <p class="screen-note">註：部分畫面已去識別化處理，僅用於呈現設計流程、資訊架構與介面結構。</p>
+        </div>
+        <div class="screen-grid linebot-screen-grid">
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder linebot-real-shot" aria-hidden="true">
+              <img src="assets/case-linebot/linebot-register.png?v=1" alt="" />
+            </div>
+            <h3>註冊 / 登入 / 綁定</h3>
+            <p><strong>設計重點：</strong>把帳號建立、登入與 LINE 綁定拆成連續步驟，並在每一步說明完成狀態。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>初次使用者能理解帳號與通知服務的關係，降低進入系統前的設定阻力。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder linebot-real-shot" aria-hidden="true">
+              <img src="assets/case-linebot/linebot-global-notify.png?v=1" alt="" />
+            </div>
+            <h3>管理全通知設定</h3>
+            <p><strong>設計重點：</strong>從測站與通知範圍出發，逐層選擇群組、測站與通知項目。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>管理者能從全域視角確認哪些範圍已啟用，不會和個人權限混在一起。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder linebot-real-shot" aria-hidden="true">
+              <img src="assets/case-linebot/linebot-member-list.png?v=1" alt="" />
+            </div>
+            <h3>管理某人員設定</h3>
+            <p><strong>設計重點：</strong>從成員列表進入，針對單一人員設定可接收的測站、群組與通知項目。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>個人通知範圍有清楚入口，管理者能快速確認某位成員會收到什麼。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder linebot-real-shot" aria-hidden="true">
+              <img src="assets/case-linebot/linebot-member-notify.png?v=1" alt="" />
+            </div>
+            <h3>搜尋 / 篩選 / 啟用</h3>
+            <p><strong>設計重點：</strong>以搜尋、篩選、checkbox 與明確保存步驟承接大量通知項目。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者可逐項確認啟用狀態，降低漏接異常或通知過載的風險。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-summary-grid project-info case-story story-info" id="project-info" data-step="05" data-icon="i" aria-labelledby="project-info-title">
+        <span class="story-step" aria-hidden="true">05</span>
+        <div class="project-info-heading">
+          <p class="eyebrow">Project Information</p>
+          <h2 id="project-info-title">專案資訊</h2>
+        </div>
+        <article>
+          <p class="card-label">Role</p>
+          <h3>我的角色</h3>
+          <p>負責前期 wireframe / flow、通知設定流程、權限規則、群組 / 使用者管理、元件整理與工程規格溝通。</p>
+        </article>
+        <article>
+          <p class="card-label">Users</p>
+          <h3>主要使用者</h3>
+          <p>管理處高層或主管、管理處人員，以及協助設定群組、成員與通知規則的公司內部 PM。</p>
+        </article>
+        <article>
+          <p class="card-label">Scope</p>
+          <h3>涵蓋範圍</h3>
+          <p>註冊、登入、綁定、全域通知、個人通知、成員列表、搜尋篩選與權限設定。</p>
+        </article>
+      </section>
+
+      <section class="case-section next-case">
+        <div>
+          <a class="next-home-link" href="index.html?v=site-sync-20260813#work">← 回首頁</a>
+          <h2>Senslink 經銷商模組</h2>
+          <p>延伸到 B2B / SaaS 後台，整理租戶、專案、測站與物理量之間的多層資料關係。</p>
+        </div>
+        <a class="text-button next-case-link" href="case-senslink.html?v=site-sync-20260813">
+          <span>NEXT</span>
+          <strong>閱讀下一篇 →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>歡迎透過 LinkedIn、Cake.me 或 IG 聯繫。</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/llalicell/">LinkedIn</a>
+        <a href="https://www.cake.me/me/llalicell">Cake.me</a>
+        <a href="https://www.behance.net/llalicell?locale=zh_TW">Behance</a>
+        <a href="https://www.instagram.com/llalicecreatell/">Instagram</a>
+        <img class="footer-logo" src="assets/logo-ca-final-transparent.png?v=2" alt="Alice Chen" />
+      </div>
+    </footer>
+    <script src="portfolio-projects.js?v=1"></script>
+    <script src="script.js?v=loader-registry-20260813"></script>
+  </body>
+</html>

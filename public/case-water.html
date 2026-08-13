@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>水利與環境監測系統群 | Alice Chen</title>
+    <meta
+      name="description"
+      content="Alice Chen 的水利與環境監測系統 UI/UX 案例，整理地圖監控、儀表板、歷史資料查詢、權限與場域視覺。"
+    />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Alice Chen UI/UX Portfolio" />
+    <meta property="og:title" content="水利與環境監測系統群 | Alice Chen" />
+    <meta
+      property="og:description"
+      content="整理地圖監控、儀表板、歷史資料查詢、權限與場域視覺的 UI/UX 案例。"
+    />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alice Chen UI/UX Portfolio 分享預覽圖" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="水利與環境監測系統群 | Alice Chen" />
+    <meta
+      name="twitter:description"
+      content="整理地圖監控、儀表板、歷史資料查詢、權限與場域視覺的 UI/UX 案例。"
+    />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=prelaunch-audit-20260813" />
+  </head>
+  <body class="case-story-page">
+    <a class="skip-link" href="#case-content">跳到案例內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html?v=site-sync-20260813" aria-label="Alice Chen portfolio home">
+        <span class="brand-mark"><img src="assets/logo-ca-final-transparent.png?v=2" alt="" /></span>
+        <span>Alice Chen</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html?v=site-sync-20260813#work">作品</a>
+        <a href="index.html?v=site-sync-20260813#approach">方法</a>
+        <a href="index.html?v=site-sync-20260813#visual">視覺</a>
+        <a href="index.html?v=site-sync-20260813#about">關於</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" id="top">
+        <div class="case-hero-copy">
+          <a class="back-link" href="index.html?v=site-sync-20260813#work">回到作品</a>
+          <p class="eyebrow">Case Study 01</p>
+          <h1>水利與環境監測系統群</h1>
+          <p class="case-lead">
+            收錄數個獨立客製的水利與環境監測案場，呈現我如何依不同業主、場域與任務，整理監看、定位與資料回查介面。
+          </p>
+          <div class="tag-list">
+            <span>地圖監控</span>
+            <span>儀表板</span>
+            <span>資料視覺化</span>
+            <span>權限流程</span>
+            <span>場域 icon</span>
+          </div>
+        </div>
+
+        <div class="case-hero-visual water-case-visual" aria-label="水利監測系統介面示意">
+          <div class="case-map-panel">
+            <span class="case-river river-one"></span>
+            <span class="case-river river-two"></span>
+            <span class="case-pin pin-alert"></span>
+            <span class="case-pin pin-normal"></span>
+            <span class="case-pin pin-camera"></span>
+            <span class="case-pin pin-gate"></span>
+          </div>
+          <div class="case-dashboard-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="case-table-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-anchor-nav water-anchor-nav chapter-anchor-nav" aria-label="案例章節導覽">
+        <a class="anchor-context" href="#context" data-icon="⌖"><span>專案背景</span></a>
+        <a class="anchor-challenges" href="#challenges" data-icon="!"><span>需求與痛點</span></a>
+        <a class="anchor-strategy" href="#strategy" data-icon="→"><span>設計策略</span></a>
+        <a class="anchor-screens" href="#screens" data-icon="▦"><span>畫面與成果</span></a>
+        <a class="anchor-info" href="#project-info" data-icon="i"><span>專案資訊</span></a>
+        <a class="anchor-top" href="#top" data-icon="↑"><span>TOP</span></a>
+      </nav>
+
+      <section class="case-section split-section water-story story-context" id="context" data-step="01" data-icon="⌖">
+        <span class="story-step" aria-hidden="true">01</span>
+        <div>
+          <p class="eyebrow">Context</p>
+          <h2>專案背景</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            本頁不是單一產品的改版紀錄，而是數個彼此獨立、依業主需求客製的水利與環境監測案場。內容涵蓋渠道與閘門監控、水情地圖、歷史事件，以及工業區排放資料管理。
+          </p>
+          <p>
+            各案沒有共用同一套元件或設計系統；我會依管理單位的工作方式、資料來源、現場設備與視覺偏好重新規劃。共同點是先釐清使用者要判讀、定位或回查什麼，再決定地圖、表格、圖表與操作入口的資訊順序。
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section water-story story-challenges" id="challenges" data-step="02" data-icon="!">
+        <span class="story-step" aria-hidden="true">02</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Needs & Pain Points</p>
+          <h2>客戶需求與使用痛點</h2>
+          <p>不同業主提出的功能與視覺偏好不盡相同，但需求通常會落在以下幾種現場問題。</p>
+        </div>
+        <div class="challenge-list">
+          <article>
+            <h3>資料多但入口要快</h3>
+            <p>站點名稱長、欄位多，畫面同時要容納表格、圖表、地圖與預警資訊，但使用者進入系統時必須先看出重點。</p>
+          </article>
+          <article>
+            <h3>日常操作不能太繞</h3>
+            <p>使用者多為 40 歲以上，字級要清楚，操作層級不能太深，否則容易增加客服與 PM 的說明成本。</p>
+          </article>
+          <article>
+            <h3>地圖、表格與圖表要接得上</h3>
+            <p>使用者常從地圖定位站點，再回查幾個月或幾年的歷史資料，因此搜尋、篩選與圖表入口需要形成同一條任務線。</p>
+          </article>
+          <article>
+            <h3>不同角色看到不同功能</h3>
+            <p>公司內部人員、管理處高層、管理處員工、外包廠商會有不同權限，需要降低誤操作與不必要的資訊干擾。</p>
+          </article>
+          <article>
+            <h3>畫面要豐富，也要讀得懂</h3>
+            <p>決策者偏好資訊量充足、色彩豐富的畫面，但實際操作仍需要清楚、有秩序且能長時間閱讀的介面。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section split-section water-story story-strategy" id="strategy" data-step="03" data-icon="→">
+        <span class="story-step" aria-hidden="true">03</span>
+        <div>
+          <p class="eyebrow">Design Strategy</p>
+          <h2>設計策略</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            我先用 wireframe 和 PM / 客戶對齊功能、資料來源與資訊層級，再進入 UI 設計。每個畫面都先確認它要服務的任務：快速判讀、定位問題、查詢歷史，或是管理權限與資料。
+          </p>
+          <p>
+            每個案場各自建立介面與元件規則。視覺上通常以 16px 作為基準字級，搭配有限狀態色標示正常、注意、預警、異常或離線；若業主沒有特殊視覺要求，則參考 Material / Vuetify 的互動邏輯，降低規格溝通與開發落差。
+          </p>
+          <ul class="strategy-points">
+            <li><strong>入口：</strong>提前露出預警、關鍵數值與異常站點，讓使用者一進來就知道先看哪裡。</li>
+            <li><strong>定位：</strong>以地圖承接站點、設備、攝影機與巡檢點，讓場域關係一眼可辨識。</li>
+            <li><strong>追查：</strong>表格加入搜尋、篩選與時間區間，搭配圖表回查指定站點的歷史資料。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section water-story story-screens" id="screens" data-step="04" data-icon="▦">
+        <span class="story-step" aria-hidden="true">04</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Key Screens & Outcomes</p>
+          <h2>主要畫面、設計重點與成果</h2>
+          <p class="screen-note">註：部分畫面已去識別化處理，僅用於呈現設計流程、資訊架構與介面結構。</p>
+        </div>
+        <div class="screen-grid">
+          <article class="screen-shot-card featured-screen">
+            <div class="screen-shot-placeholder water-overview-shot" aria-hidden="true">
+              <img src="assets/case-water/kaohsiung-channel-overview.png" alt="" />
+            </div>
+            <p class="screen-context">渠道與閘門監控案</p>
+            <h3>渠道總覽與入口判讀</h3>
+            <p><strong>設計重點：</strong>以渠道示意、支線、取水口與水位 / 流量標籤呈現場域關係。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者能先掌握整體監測範圍，再進入關鍵站點查看即時狀態。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder water-map-shot" aria-hidden="true">
+              <img src="assets/case-water/finetek-history-table.png" alt="" />
+            </div>
+            <p class="screen-context">工業區排放管理案</p>
+            <h3>跨廠區歷史資料查詢</h3>
+            <p><strong>設計重點：</strong>將廠區、年份、月份與報表類型整理成可組合的查詢條件。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>大量排放資料可在同一條任務線完成比較、檢視與報表下載。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder water-history-shot" aria-hidden="true">
+              <img src="assets/case-water/yunlin-history-layers.png" alt="" />
+            </div>
+            <p class="screen-context">水情地圖與事件回溯案</p>
+            <h3>歷史事件與圖層篩選</h3>
+            <p><strong>設計重點：</strong>把歷史事件列表、地圖點位、圖層篩選與事件播放放在同一畫面。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者能沿著事件時間回查站點與圖層變化，不必在多個頁面間切換。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder water-chart-shot" aria-hidden="true">
+              <img src="assets/case-water/kaohsiung-water-level-chart.png" alt="" />
+            </div>
+            <p class="screen-context">閘門與即時狀態監控案</p>
+            <h3>水位歷線圖</h3>
+            <p><strong>設計重點：</strong>從即時狀態直接展開水位歷線圖，保留原本監看畫面的脈絡。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者可就地追查資料變化，再回到閘門操作與狀態判讀。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-summary-grid project-info water-story story-info" id="project-info" data-step="05" data-icon="i" aria-labelledby="project-info-title">
+        <span class="story-step" aria-hidden="true">05</span>
+        <div class="project-info-heading">
+          <p class="eyebrow">Project Information</p>
+          <h2 id="project-info-title">專案資訊</h2>
+        </div>
+        <article>
+          <p class="card-label">Role</p>
+          <h3>我的角色</h3>
+          <p>所有收錄案場皆由我負責從 wireframe 到 UI，包含資訊層級、地圖監控、資料查詢，以及案內元件與視覺規則。</p>
+        </article>
+        <article>
+          <p class="card-label">Users</p>
+          <h3>主要使用者</h3>
+          <p>管理處日常操作人員、公司內部 PM，以及查看預警資訊與簡報成果的主管或決策者。</p>
+        </article>
+        <article>
+          <p class="card-label">Scope</p>
+          <h3>涵蓋範圍</h3>
+          <p>入口儀表板、地圖監控、歷史資料查詢、圖表檢視、權限流程、場域插畫與功能 icon。</p>
+        </article>
+      </section>
+
+      <section class="case-section next-case">
+        <div>
+          <a class="next-home-link" href="index.html?v=site-sync-20260813#work">← 回首頁</a>
+          <h2>SensMate APP</h2>
+          <p>從大型監測平台進入行動端設備管理，看複雜設定如何被拆成更容易理解的 App 流程。</p>
+        </div>
+        <a class="text-button next-case-link" href="case-sensmate.html?v=site-sync-20260813">
+          <span>NEXT</span>
+          <strong>閱讀下一篇 →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>歡迎透過 LinkedIn、Cake.me 或 IG 聯繫。</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/llalicell/">LinkedIn</a>
+        <a href="https://www.cake.me/me/llalicell">Cake.me</a>
+        <a href="https://www.behance.net/llalicell?locale=zh_TW">Behance</a>
+        <a href="https://www.instagram.com/llalicecreatell/">Instagram</a>
+        <img class="footer-logo" src="assets/logo-ca-final-transparent.png?v=2" alt="Alice Chen" />
+      </div>
+    </footer>
+    <script src="portfolio-projects.js?v=1"></script>
+    <script src="script.js?v=loader-registry-20260813"></script>
+  </body>
+</html>

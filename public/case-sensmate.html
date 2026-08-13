@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SensMate APP | Alice Chen</title>
+    <meta
+      name="description"
+      content="Alice Chen 的 SensMate APP UI/UX 案例，整理設備主機、外接感測器、軟體頻道與權限管理的行動端流程。"
+    />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Alice Chen UI/UX Portfolio" />
+    <meta property="og:title" content="SensMate APP | Alice Chen" />
+    <meta
+      property="og:description"
+      content="整理設備主機、外接感測器、軟體頻道與權限管理的行動端 UI/UX 案例。"
+    />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alice Chen UI/UX Portfolio 分享預覽圖" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SensMate APP | Alice Chen" />
+    <meta
+      name="twitter:description"
+      content="整理設備主機、外接感測器、軟體頻道與權限管理的行動端 UI/UX 案例。"
+    />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=prelaunch-audit-20260813" />
+  </head>
+  <body class="case-story-page">
+    <a class="skip-link" href="#case-content">跳到案例內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html?v=site-sync-20260813" aria-label="Alice Chen portfolio home">
+        <span class="brand-mark"><img src="assets/logo-ca-final-transparent.png?v=2" alt="" /></span>
+        <span>Alice Chen</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html?v=site-sync-20260813#work">作品</a>
+        <a href="index.html?v=site-sync-20260813#approach">方法</a>
+        <a href="index.html?v=site-sync-20260813#visual">視覺</a>
+        <a href="index.html?v=site-sync-20260813#about">關於</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" id="top">
+        <div class="case-hero-copy">
+          <a class="back-link" href="index.html?v=site-sync-20260813#work">回到作品</a>
+          <p class="eyebrow">Case Study 02</p>
+          <h1>SensMate APP</h1>
+          <p class="case-lead">
+            把設備主機、外接感測器與軟體頻道的設定關係拆開，讓 App 在手機上也能一步步完成設定。
+          </p>
+          <div class="tag-list">
+            <span>Mobile UI</span>
+            <span>設備管理</span>
+            <span>設定流程</span>
+            <span>軟體頻道</span>
+            <span>元件整理</span>
+          </div>
+        </div>
+
+        <div class="case-hero-visual app-case-visual" aria-label="SensMate APP 介面示意">
+          <div class="app-phone phone-list">
+            <span class="phone-topbar"></span>
+            <span class="phone-search"></span>
+            <span class="phone-row active"></span>
+            <span class="phone-row"></span>
+            <span class="phone-row warning"></span>
+            <span class="phone-row"></span>
+          </div>
+          <div class="app-phone phone-channel">
+            <span class="phone-topbar"></span>
+            <span class="channel-card connected"></span>
+            <span class="channel-card"></span>
+            <span class="channel-card pending"></span>
+          </div>
+          <div class="app-settings-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-anchor-nav chapter-anchor-nav" aria-label="案例章節導覽">
+        <a class="anchor-context" href="#context" data-icon="⌖"><span>專案背景</span></a>
+        <a class="anchor-challenges" href="#challenges" data-icon="!"><span>需求與痛點</span></a>
+        <a class="anchor-strategy" href="#strategy" data-icon="→"><span>設計策略</span></a>
+        <a class="anchor-screens" href="#flows" data-icon="▦"><span>流程與成果</span></a>
+        <a class="anchor-info" href="#project-info" data-icon="i"><span>專案資訊</span></a>
+        <a class="anchor-top" href="#top" data-icon="↑"><span>TOP</span></a>
+      </nav>
+
+      <section class="case-section split-section case-story story-context" id="context" data-step="01" data-icon="⌖">
+        <span class="story-step" aria-hidden="true">01</span>
+        <div>
+          <p class="eyebrow">Context</p>
+          <h2>專案背景</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            SensMate APP 是用於設備監測、感測資料查看、內部設備管理與權限管理的行動端工具。使用者可能在辦公室、出差途中或現場維護時查看設備與資料狀態，所以流程要適合隨身操作。
+          </p>
+          <p>
+            這個專案的核心是拆開「設備主機、外接感測器、軟體頻道」三者之間的設定關係。使用者需要知道現在看到的是設備資料、外接硬體資料，還是公式轉換後產生的軟體頻道。
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-challenges" id="challenges" data-step="02" data-icon="!">
+        <span class="story-step" aria-hidden="true">02</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Needs & Pain Points</p>
+          <h2>使用情境與設定痛點</h2>
+          <p>設備設定不是單一路徑，手機空間與條件式欄位又讓資訊更容易失去脈絡。</p>
+        </div>
+        <div class="challenge-list">
+          <article>
+            <h3>設定關係不是單層</h3>
+            <p>設備本身有設定項目，外接感測器也有設定，再加上軟體頻道與公式轉換，資訊很容易混在一起。</p>
+          </article>
+          <article>
+            <h3>規格討論成本高</h3>
+            <p>名詞定義、必填 / 非必填、重點數值與進階設定，都需要先在 wireframe 階段釐清。</p>
+          </article>
+          <article>
+            <h3>欄位出現條件複雜</h3>
+            <p>有些內容接上硬體才會出現，有些還需要手動新增項目後才能設定，介面需要讓使用者知道下一步為什麼出現。</p>
+          </article>
+          <article>
+            <h3>設備入口層級深</h3>
+            <p>各管理處 / group、支線、站點下都可能有多台設備，列表、搜尋與設備詳細頁入口都要能快速辨識。</p>
+          </article>
+          <article>
+            <h3>手機空間有限</h3>
+            <p>複雜設定必須拆成可回退的步驟，不能一次塞進所有欄位。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section split-section case-story story-strategy" id="strategy" data-step="03" data-icon="→">
+        <span class="story-step" aria-hidden="true">03</span>
+        <div>
+          <p class="eyebrow">Design Strategy</p>
+          <h2>設計策略</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            我先用 wireframe 對齊操作路徑與功能邏輯，再進入 UI 設計。針對設備主機、外接感測器與軟體頻道的關係，將設定拆成「找設備、看本機資料、設定軟體頻道、選擇資料來源、編輯感測器」幾段。
+          </p>
+          <p>
+            介面用一致的表單元件、必填標示、狀態文字、顏色與 icon 區分設備類型、連線狀態、設定狀態與軟體頻道類型。進階或條件式內容收進下一層，避免手機畫面過載。
+          </p>
+          <p>
+            wireframe 階段先把設備主機、外接感測器與軟體頻道視為三種互相關聯的物件，逐一釐清設備原生欄位、接上硬體後才出現的內容，以及手動新增後才能設定的項目。
+          </p>
+          <ul class="strategy-points">
+            <li><strong>找設備：</strong>以群組設備列表與搜尋入口，讓使用者先快速進入正確設備。</li>
+            <li><strong>看狀態：</strong>用狀態文字與顏色提示已連線、已設定、待設定或不同類型的軟體頻道。</li>
+            <li><strong>做設定：</strong>把公式、讀值來源、感測器選擇與進階設定拆成可回退的步驟。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-screens" id="flows" data-step="04" data-icon="▦">
+        <span class="story-step" aria-hidden="true">04</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Key Flows & Outcomes</p>
+          <h2>主要流程、設計重點與成果</h2>
+          <p class="screen-note">註：部分畫面已去識別化處理，僅用於呈現設計流程、資訊架構與介面結構。</p>
+        </div>
+        <div class="screen-grid sensmate-screen-grid">
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder sensmate-real-shot" aria-hidden="true">
+              <img src="assets/case-sensmate/sensmate-device-list.png?v=2" alt="" />
+            </div>
+            <h3>群組設備列表</h3>
+            <p><strong>設計重點：</strong>以較寬鬆的設備列表、群組層級與搜尋入口，協助使用者先找到正確設備。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>從多層案場結構進入設備資料時，仍能保有清楚的所在位置。</p>
+          </article>
+          <article class="screen-shot-card featured-screen">
+            <div class="screen-shot-placeholder sensmate-real-shot sensmate-wide-shot" aria-hidden="true">
+              <img src="assets/case-sensmate/sensmate-local-data-channels.png?v=2" alt="" />
+            </div>
+            <h3>本機資料與軟體頻道</h3>
+            <p><strong>設計重點：</strong>在設備詳細頁並列本機資料與多張軟體頻道卡片，以文字和狀態色提示連線與設定狀態。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者不用進入每張卡片，便能先判斷哪些資料可用、哪些仍待處理。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder sensmate-real-shot sensmate-long-shot" aria-hidden="true">
+              <img src="assets/case-sensmate/sensmate-software-channel.png?v=2" alt="" />
+            </div>
+            <h3>設定軟體頻道</h3>
+            <p><strong>設計重點：</strong>把公式、讀值來源與轉換前後數值放在同一條設定脈絡，次要操作收進更多選單。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>複雜公式設定被拆成可理解、可回退的步驟，同時保留進階編輯能力。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder sensmate-real-shot" aria-hidden="true">
+              <img src="assets/case-sensmate/sensmate-external-sensor.png?v=2" alt="" />
+            </div>
+            <h3>外接感測器設定</h3>
+            <p><strong>設計重點：</strong>將資料來源、感測器選擇、COM 串列埠與 MODBUS 空狀態拆成不同操作層級。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>條件式欄位只在需要時出現，降低一次閱讀過多設定的認知負擔。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-summary-grid project-info case-story story-info" id="project-info" data-step="05" data-icon="i" aria-labelledby="project-info-title">
+        <span class="story-step" aria-hidden="true">05</span>
+        <div class="project-info-heading">
+          <p class="eyebrow">Project Information</p>
+          <h2 id="project-info-title">專案資訊</h2>
+        </div>
+        <article>
+          <p class="card-label">Role</p>
+          <h3>我的角色</h3>
+          <p>負責前期 wireframe / flow、行動端 UI、元件與 icon，以及設備設定規格整理與工程溝通。</p>
+        </article>
+        <article>
+          <p class="card-label">Users</p>
+          <h3>主要使用者</h3>
+          <p>公司內部產品部、技術服務部與 PM；未來也可延伸給需要管理內部硬體設備的客戶或廠商。</p>
+        </article>
+        <article>
+          <p class="card-label">Scope</p>
+          <h3>涵蓋範圍</h3>
+          <p>群組設備列表、本機資料、軟體頻道、外接感測器、帳號資料，以及權限與組織切換。</p>
+        </article>
+      </section>
+
+      <section class="case-section next-case">
+        <div>
+          <a class="next-home-link" href="index.html?v=site-sync-20260813#work">← 回首頁</a>
+          <h2>LINE Bot 通知管理平台</h2>
+          <p>接著看通知、群組、成員與權限規則如何拆成兩種視角，降低後台設定時的混淆。</p>
+        </div>
+        <a class="text-button next-case-link" href="case-linebot.html?v=site-sync-20260813">
+          <span>NEXT</span>
+          <strong>閱讀下一篇 →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>歡迎透過 LinkedIn、Cake.me 或 IG 聯繫。</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/llalicell/">LinkedIn</a>
+        <a href="https://www.cake.me/me/llalicell">Cake.me</a>
+        <a href="https://www.behance.net/llalicell?locale=zh_TW">Behance</a>
+        <a href="https://www.instagram.com/llalicecreatell/">Instagram</a>
+        <img class="footer-logo" src="assets/logo-ca-final-transparent.png?v=2" alt="Alice Chen" />
+      </div>
+    </footer>
+    <script src="portfolio-projects.js?v=1"></script>
+    <script src="script.js?v=loader-registry-20260813"></script>
+  </body>
+</html>

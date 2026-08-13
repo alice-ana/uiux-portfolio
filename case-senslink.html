@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Senslink 經銷商模組 | Alice Chen</title>
+    <meta
+      name="description"
+      content="Alice Chen 的 Senslink 經銷商模組 UI/UX 案例，整理租戶、專案、測站、物理量與所屬單位可見範圍。"
+    />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Alice Chen UI/UX Portfolio" />
+    <meta property="og:title" content="Senslink 經銷商模組 | Alice Chen" />
+    <meta
+      property="og:description"
+      content="整理租戶、專案、測站、物理量與所屬單位可見範圍的 UI/UX 案例。"
+    />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alice Chen UI/UX Portfolio 分享預覽圖" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Senslink 經銷商模組 | Alice Chen" />
+    <meta
+      name="twitter:description"
+      content="整理租戶、專案、測站、物理量與所屬單位可見範圍的 UI/UX 案例。"
+    />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=prelaunch-audit-20260813" />
+  </head>
+  <body class="case-story-page">
+    <a class="skip-link" href="#case-content">跳到案例內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html?v=site-sync-20260813" aria-label="Alice Chen portfolio home">
+        <span class="brand-mark"><img src="assets/logo-ca-final-transparent.png?v=2" alt="" /></span>
+        <span>Alice Chen</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html?v=site-sync-20260813#work">作品</a>
+        <a href="index.html?v=site-sync-20260813#approach">方法</a>
+        <a href="index.html?v=site-sync-20260813#visual">視覺</a>
+        <a href="index.html?v=site-sync-20260813#about">關於</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" id="top">
+        <div class="case-hero-copy">
+          <a class="back-link" href="index.html?v=site-sync-20260813#work">回到作品</a>
+          <p class="eyebrow">Case Study 04</p>
+          <h1>Senslink 經銷商模組</h1>
+          <p class="case-lead">
+            梳理租戶、專案、測站、物理量的多層關係，讓公司 PM 能代管經銷商與客戶資料。
+          </p>
+          <div class="tag-list">
+            <span>B2B</span>
+            <span>SaaS 後台</span>
+            <span>多層流程</span>
+            <span>所屬單位</span>
+            <span>表單設計</span>
+          </div>
+        </div>
+
+        <div class="case-hero-visual senslink-case-visual" aria-label="Senslink 經銷商模組階層流程示意">
+          <div class="senslink-tree-panel">
+            <span class="tree-node tenant">租戶</span>
+            <span class="tree-node project">專案</span>
+            <span class="tree-node station">測站</span>
+            <span class="tree-node quantity">物理量</span>
+          </div>
+          <div class="senslink-unit-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="senslink-form-panel">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-anchor-nav chapter-anchor-nav" aria-label="案例章節導覽">
+        <a class="anchor-context" href="#context" data-icon="⌖"><span>專案背景</span></a>
+        <a class="anchor-challenges" href="#challenges" data-icon="!"><span>需求與痛點</span></a>
+        <a class="anchor-strategy" href="#strategy" data-icon="→"><span>設計策略</span></a>
+        <a class="anchor-screens" href="#flows" data-icon="▦"><span>流程與成果</span></a>
+        <a class="anchor-info" href="#project-info" data-icon="i"><span>專案資訊</span></a>
+        <a class="anchor-top" href="#top" data-icon="↑"><span>TOP</span></a>
+      </nav>
+
+      <section class="case-section split-section case-story story-context" id="context" data-step="01" data-icon="⌖">
+        <span class="story-step" aria-hidden="true">01</span>
+        <div>
+          <p class="eyebrow">Context</p>
+          <h2>專案背景</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            Senslink 經銷商模組是公司 PM 使用的管理平台，用來替新的經銷商或客戶組織建立租戶，並逐層新增專案、測站與物理量。這些資料會影響客戶可見範圍與後續監測項目，因此不適合讓客戶自行修改。
+          </p>
+          <p>
+            設計上需要讓 PM 清楚知道目前正在建立哪一層資料、資料歸屬到哪個單位，以及後續哪些人能看到。
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-challenges" id="challenges" data-step="02" data-icon="!">
+        <span class="story-step" aria-hidden="true">02</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Needs &amp; Pain Points</p>
+          <h2>多層資料與權限痛點</h2>
+          <p>建立資料不只是填表單，PM 還必須同時理解資料層級、歸屬單位與可見範圍。</p>
+        </div>
+        <div class="challenge-list">
+          <article>
+            <h3>資料層級多</h3>
+            <p>租戶、專案、測站與物理量需要逐層建立，若入口與返回關係不清楚，PM 很容易迷路。</p>
+          </article>
+          <article>
+            <h3>可見範圍要明確</h3>
+            <p>需要透過編輯所屬單位區分不同租戶或管理處可見範圍，避免看到不該看到的資料。</p>
+          </article>
+          <article>
+            <h3>表單欄位多</h3>
+            <p>新增租戶、專案、測站與物理量都有不同欄位，仍需維持一致操作模式與明確資訊權重。</p>
+          </article>
+          <article>
+            <h3>物理量規則複雜</h3>
+            <p>物理量會牽涉單位、數值範圍、警報閾值、圖表顯示與公式驗算，需要先釐清固定選項與自由填寫欄位。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section split-section case-story story-strategy" id="strategy" data-step="03" data-icon="→">
+        <span class="story-step" aria-hidden="true">03</span>
+        <div>
+          <p class="eyebrow">Design Strategy</p>
+          <h2>設計策略</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            我先在 wireframe 前期梳理租戶、專案、測站、物理量的多層路徑，確定每一層的新增入口、返回位置與資料建立後的追蹤方式。
+          </p>
+          <p>
+            同時先分清頁面資訊權重，不重要或進階的內容往下一頁放。物理量設定則先釐清驗算公式、固定選項與自由填寫欄位，避免 UI 階段才反覆調整邏輯。
+          </p>
+          <p>
+            可見範圍不另外做成抽象的權限設定頁，而是透過所屬單位列表與編輯租戶中的所屬單位欄位，讓 PM 直接指定資料歸屬。
+          </p>
+          <ul class="strategy-points">
+            <li><strong>整理流程：</strong>把租戶、專案、測站、物理量的多層路徑畫清楚。</li>
+            <li><strong>分清權重：</strong>在 wireframe 階段先決定哪些資訊放在本頁，哪些進階內容往下一層放。</li>
+            <li><strong>釐清欄位：</strong>先確認物理量驗算公式、固定選項與自由填寫欄位，減少後續規格反覆。</li>
+            <li><strong>分清歸屬：</strong>以所屬單位連結租戶與資料邊界，避免誤改或誤看其他單位資料。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-screens" id="flows" data-step="04" data-icon="▦">
+        <span class="story-step" aria-hidden="true">04</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Key Flows &amp; Outcomes</p>
+          <h2>主要流程、設計重點與成果</h2>
+          <p class="screen-note">註：部分畫面已去識別化處理，僅用於呈現設計流程、資訊架構與介面結構。</p>
+        </div>
+        <div class="screen-grid senslink-screen-grid">
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder senslink-real-shot" aria-hidden="true">
+              <img src="assets/case-senslink/senslink-new-tenant.png?v=1" alt="" />
+            </div>
+            <h3>新增租戶</h3>
+            <p><strong>設計重點：</strong>將基本資訊、所屬單位、帳號期限與初始帳號收在同一個建立任務中。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>PM 可完成新組織的基本配置，不需要在多個管理頁往返。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder senslink-real-shot" aria-hidden="true">
+              <img src="assets/case-senslink/senslink-tenant-list.png?v=1" alt="" />
+            </div>
+            <h3>租戶列表與可見範圍</h3>
+            <p><strong>設計重點：</strong>在列表中保留所屬單位、租戶帳號與 Host，並由編輯租戶直接調整資料歸屬。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>PM 能在日常代管時快速確認可見範圍，降低跨單位誤看或誤改資料的風險。</p>
+          </article>
+          <article class="screen-shot-card featured-screen">
+            <div class="screen-shot-placeholder senslink-real-shot senslink-long-shot" aria-hidden="true">
+              <img src="assets/case-senslink/senslink-new-station.png?v=1" alt="" />
+            </div>
+            <h3>新增測站</h3>
+            <p><strong>設計重點：</strong>從指定專案帶入測站建立流程，分層填寫位置、坐標、設備與資料採集設定。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>測站不會脫離上層專案，PM 能一路追蹤目前處理的資料層級。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder senslink-real-shot" aria-hidden="true">
+              <img src="assets/case-senslink/senslink-new-quantity.png?v=1" alt="" />
+            </div>
+            <h3>新增物理量</h3>
+            <p><strong>設計重點：</strong>分開物理量類型、單位、數值範圍、警報閾值與驗算公式，將固定選項與自由填寫欄位說清楚。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>複雜設定被分成可檢查的欄位類型，減少 PM 與工程師來回確認規格。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-summary-grid project-info case-story story-info" id="project-info" data-step="05" data-icon="i" aria-labelledby="project-info-title">
+        <span class="story-step" aria-hidden="true">05</span>
+        <div class="project-info-heading">
+          <p class="eyebrow">Project Information</p>
+          <h2 id="project-info-title">專案資訊</h2>
+        </div>
+        <article>
+          <p class="card-label">Role</p>
+          <h3>我的角色</h3>
+          <p>負責前期 UX 流程規劃、wireframe / flow、UI 介面設計、元件整理，以及與工程師溝通規格。</p>
+        </article>
+        <article>
+          <p class="card-label">Users</p>
+          <h3>主要使用者</h3>
+          <p>公司內部 PM，由公司端代管經銷商與客戶的租戶、專案、測站與物理量資料。</p>
+        </article>
+        <article>
+          <p class="card-label">Scope</p>
+          <h3>涵蓋範圍</h3>
+          <p>租戶與所屬單位、專案、測站、物理量、表單欄位與可見範圍。</p>
+        </article>
+      </section>
+
+      <section class="case-section next-case">
+        <div>
+          <a class="next-home-link" href="index.html?v=site-sync-20260813#work">← 回首頁</a>
+          <h2>Remote GUI</h2>
+          <p>接著看偏工程與現場操作的 Remote GUI，如何處理狀態燈號、虛擬鍵盤與高風險操作確認。</p>
+        </div>
+        <a class="text-button next-case-link" href="case-remote.html?v=site-sync-20260813">
+          <span>NEXT</span>
+          <strong>閱讀下一篇 →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>歡迎透過 LinkedIn、Cake.me 或 IG 聯繫。</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/llalicell/">LinkedIn</a>
+        <a href="https://www.cake.me/me/llalicell">Cake.me</a>
+        <a href="https://www.behance.net/llalicell?locale=zh_TW">Behance</a>
+        <a href="https://www.instagram.com/llalicecreatell/">Instagram</a>
+        <img class="footer-logo" src="assets/logo-ca-final-transparent.png?v=2" alt="Alice Chen" />
+      </div>
+    </footer>
+    <script src="portfolio-projects.js?v=1"></script>
+    <script src="script.js?v=loader-registry-20260813"></script>
+  </body>
+</html>

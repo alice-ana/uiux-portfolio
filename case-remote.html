@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Remote GUI | Alice Chen</title>
+    <meta
+      name="description"
+      content="Alice Chen 的 Remote GUI UI/UX 案例，整理遠端控制設備、狀態燈號、高風險操作確認與虛擬鍵盤流程。"
+    />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Alice Chen UI/UX Portfolio" />
+    <meta property="og:title" content="Remote GUI | Alice Chen" />
+    <meta
+      property="og:description"
+      content="整理遠端控制設備、狀態燈號、高風險操作確認與虛擬鍵盤流程的 UI/UX 案例。"
+    />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alice Chen UI/UX Portfolio 分享預覽圖" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Remote GUI | Alice Chen" />
+    <meta
+      name="twitter:description"
+      content="整理遠端控制設備、狀態燈號、高風險操作確認與虛擬鍵盤流程的 UI/UX 案例。"
+    />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=prelaunch-audit-20260813" />
+  </head>
+  <body class="case-story-page">
+    <a class="skip-link" href="#case-content">跳到案例內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html?v=site-sync-20260813" aria-label="Alice Chen portfolio home">
+        <span class="brand-mark"><img src="assets/logo-ca-final-transparent.png?v=2" alt="" /></span>
+        <span>Alice Chen</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html?v=site-sync-20260813#work">作品</a>
+        <a href="index.html?v=site-sync-20260813#approach">方法</a>
+        <a href="index.html?v=site-sync-20260813#visual">視覺</a>
+        <a href="index.html?v=site-sync-20260813#about">關於</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" id="top">
+        <div class="case-hero-copy">
+          <a class="back-link" href="index.html?v=site-sync-20260813#work">回到作品</a>
+          <p class="eyebrow">Case Study 05</p>
+          <h1>Remote GUI</h1>
+          <p class="case-lead">
+            把偏工程的遠端控制、狀態判讀與指令執行，轉成現場人員能在觸控螢幕上安全操作的 Linux GUI。
+          </p>
+          <div class="tag-list">
+            <span>Remote Control</span>
+            <span>工業 GUI</span>
+            <span>高風險操作</span>
+            <span>狀態燈號</span>
+            <span>虛擬鍵盤</span>
+          </div>
+        </div>
+
+        <div class="case-hero-visual remote-case-visual remote-hero-shot" aria-label="Remote GUI Linux 現場主操作頁">
+          <img src="assets/case-remote/linux-remote-main.png" alt="" />
+        </div>
+      </section>
+
+      <nav class="case-anchor-nav chapter-anchor-nav" aria-label="案例章節導覽">
+        <a class="anchor-context" href="#context" data-icon="⌖"><span>專案背景</span></a>
+        <a class="anchor-challenges" href="#challenges" data-icon="!"><span>需求與痛點</span></a>
+        <a class="anchor-strategy" href="#strategy" data-icon="→"><span>設計策略</span></a>
+        <a class="anchor-screens" href="#flows" data-icon="▦"><span>畫面與成果</span></a>
+        <a class="anchor-info" href="#project-info" data-icon="i"><span>專案資訊</span></a>
+        <a class="anchor-top" href="#top" data-icon="↑"><span>TOP</span></a>
+      </nav>
+
+      <section class="case-section split-section case-story story-context" id="context" data-step="01" data-icon="⌖">
+        <span class="story-step" aria-hidden="true">01</span>
+        <div>
+          <p class="eyebrow">Context</p>
+          <h2>專案背景</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            Remote GUI 用於現場設備的遠端控制與維護，包含查看系統狀態、執行指令、檔案管理、設備重啟與確認連線模式。使用者不只有工程師，也包含技術服務與現場維護人員。
+          </p>
+          <p>
+            這次設計延續既有網頁版的綠色配色與控制語言，轉成 Linux 現場觸控畫面。現場設備沒有鍵盤，也可能在強光或昏暗環境中操作，因此畫面需要高對比、清楚文字、明確按鈕回饋與可啟閉的虛擬鍵盤。
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-challenges" id="challenges" data-step="02" data-icon="!">
+        <span class="story-step" aria-hidden="true">02</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Needs &amp; Pain Points</p>
+          <h2>現場操作與安全痛點</h2>
+          <p>畫面不只要顯示資料，還必須在受限硬體與不穩定環境中，幫助非工程使用者安全地送出控制指令。</p>
+        </div>
+        <div class="challenge-list">
+          <article>
+            <h3>操作偏工程</h3>
+            <p>執行指令、設備重啟與連線模式確認都偏技術，需要把工程語言轉成使用者能判斷的狀態與下一步。</p>
+          </article>
+          <article>
+            <h3>高風險操作</h3>
+            <p>閘門操作、指令執行與重啟設備都可能影響現場安全，需要在動作前說清楚後果並要求確認。</p>
+          </article>
+          <article>
+            <h3>狀態燈號差異大</h3>
+            <p>不同站點的燈號數量與名稱不固定，版面需要依尺寸調整文字與排列，並用分頁承接更多狀態。</p>
+          </article>
+          <article>
+            <h3>現場光線不穩定</h3>
+            <p>設備可能在強日光或昏暗環境下使用，單靠顏色不夠，需要同時用文字標籤與明顯按鈕狀態輔助判讀。</p>
+          </article>
+          <article>
+            <h3>設定類別多</h3>
+            <p>控制、設定與維護功能混在一起時容易誤觸，需要用 tab 或分區整理，預設先露出常用操作。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section split-section case-story story-strategy" id="strategy" data-step="03" data-icon="→">
+        <span class="story-step" aria-hidden="true">03</span>
+        <div>
+          <p class="eyebrow">Design Strategy</p>
+          <h2>設計策略</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            我先用 wireframe 確認實際操作順序，拆出常用操作、危險動作、二次確認條件，以及沒有鍵盤時的輸入情境。接著把狀態燈號、閘門控制、輔助控制與連線模式放在同一個主畫面。
+          </p>
+          <p>
+            視覺上延續既有網頁版的綠色主色、狀態燈號與大型控制元件，再加入工業現場需要的高對比按鈕、清楚分頁與大字警示。介面重點是讓使用者知道目前狀態、操作目標與按下去之後會發生什麼事。
+          </p>
+          <p>
+            這不是單純把網頁版改成工業風，而是保留原本的狀態與控制語言，再依 Linux 現場設備的觸控、鍵盤與安全限制重新組織。
+          </p>
+          <ul class="strategy-points">
+            <li><strong>先理流程：</strong>wireframe 階段先和工程師對齊操作路徑、確認條件與設備回饋。</li>
+            <li><strong>同頁判讀：</strong>將即時數值、狀態燈號、閘門控制與輔助控制集中在主操作頁。</li>
+            <li><strong>防止誤觸：</strong>危險動作使用大字警示與確認視窗，必要時搭配虛擬鍵盤輸入。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-screens" id="flows" data-step="04" data-icon="▦">
+        <span class="story-step" aria-hidden="true">04</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Key Screens &amp; Outcomes</p>
+          <h2>主要畫面、設計重點與成果</h2>
+          <p class="screen-note">註：部分畫面已去識別化處理，僅用於呈現設計流程、資訊架構與介面結構。</p>
+        </div>
+        <div class="screen-grid">
+          <article class="screen-shot-card featured-screen remote-evolution-card">
+            <div class="remote-evolution-pair" aria-hidden="true">
+              <figure>
+                <img src="assets/case-remote/remote-web-green-anonymized.png?v=1" alt="既有綠色網頁版閘門監控介面" />
+                <figcaption>既有網頁版</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/case-remote/linux-remote-main.png" alt="" />
+                <figcaption>Linux 現場版</figcaption>
+              </figure>
+            </div>
+            <h3>從網頁版到 Linux 現場版</h3>
+            <p><strong>設計重點：</strong>保留綠色主色、狀態燈號與大型控制元件，重組為 1024x768 現場觸控畫面。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者可沿用熟悉的判讀方式，同時適應 Linux 設備的觸控與現場限制。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder remote-real-shot" aria-hidden="true">
+              <img src="assets/case-remote/linux-remote-edit-params.png" alt="" />
+            </div>
+            <h3>參數設定與輸入回饋</h3>
+            <p><strong>設計重點：</strong>將點位、公式與初始值整理為明確欄位，同時呈現錯誤輸入的狀態。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>工程與現場人員能在儲存前發現格式問題，降低錯誤參數影響設備的風險。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder remote-real-shot" aria-hidden="true">
+              <img src="assets/case-remote/linux-remote-person-alert.png" alt="" />
+            </div>
+            <h3>高風險確認視窗</h3>
+            <p><strong>設計重點：</strong>在偵測到危險區人員時，以大字警告、攝影機名稱與兩個明確動作要求操作者再次判斷。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>危險動作不會因單次誤觸立即執行，操作者也知道確認前必須先檢查什麼。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder remote-real-shot" aria-hidden="true">
+              <img src="assets/case-remote/remote-virtual-keyboard-focus.png" alt="" />
+            </div>
+            <h3>可啟閉虛擬鍵盤</h3>
+            <p><strong>設計重點：</strong>輸入數值時開啟大型觸控鍵盤，並提供刪除、取消與確認的高對比動作。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>無實體鍵盤的現場設備仍能完成輸入，鍵盤也不會在非輸入任務時遮擋操作畫面。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-summary-grid project-info case-story story-info" id="project-info" data-step="05" data-icon="i" aria-labelledby="project-info-title">
+        <span class="story-step" aria-hidden="true">05</span>
+        <div class="project-info-heading">
+          <p class="eyebrow">Project Information</p>
+          <h2 id="project-info-title">專案資訊</h2>
+        </div>
+        <article>
+          <p class="card-label">Role</p>
+          <h3>我的角色</h3>
+          <p>負責 wireframe / flow、Linux GUI、狀態燈號、控制路徑、虛擬鍵盤與高風險操作防呆。</p>
+        </article>
+        <article>
+          <p class="card-label">Users</p>
+          <h3>主要使用者</h3>
+          <p>公司內部工程師、技術服務部、PM、客戶現場維護人員，以及管理處人員。</p>
+        </article>
+        <article>
+          <p class="card-label">Scope</p>
+          <h3>涵蓋範圍</h3>
+          <p>即時數值、狀態燈號、閘門與輔助控制、參數設定、高風險確認視窗與虛擬鍵盤。</p>
+        </article>
+      </section>
+
+      <section class="case-section next-case">
+        <div>
+          <a class="next-home-link" href="index.html?v=site-sync-20260813#work">← 回首頁</a>
+          <h2>七星管理處</h2>
+          <p>最後回到儀表板與 design tokens，看 2K 展示畫面如何延伸成工程 handoff。</p>
+        </div>
+        <a class="text-button next-case-link" href="case-chising.html?v=site-sync-20260813">
+          <span>NEXT</span>
+          <strong>閱讀下一篇 →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>歡迎透過 LinkedIn、Cake.me 或 IG 聯繫。</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/llalicell/">LinkedIn</a>
+        <a href="https://www.cake.me/me/llalicell">Cake.me</a>
+        <a href="https://www.behance.net/llalicell?locale=zh_TW">Behance</a>
+        <a href="https://www.instagram.com/llalicecreatell/">Instagram</a>
+        <img class="footer-logo" src="assets/logo-ca-final-transparent.png?v=2" alt="Alice Chen" />
+      </div>
+    </footer>
+    <script src="portfolio-projects.js?v=1"></script>
+    <script src="script.js?v=loader-registry-20260813"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>七星管理處 | Alice Chen</title>
+    <meta
+      name="description"
+      content="Alice Chen 的七星管理處 UI/UX 案例，整理監測儀表板、展開資訊、自訂畫面與工程交付規格。"
+    />
+    <meta name="theme-color" content="#f7f4ec" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Alice Chen UI/UX Portfolio" />
+    <meta property="og:title" content="七星管理處 | Alice Chen" />
+    <meta
+      property="og:description"
+      content="整理監測儀表板、展開資訊、自訂畫面與工程交付規格的 UI/UX 案例。"
+    />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alice Chen UI/UX Portfolio 分享預覽圖" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="七星管理處 | Alice Chen" />
+    <meta
+      name="twitter:description"
+      content="整理監測儀表板、展開資訊、自訂畫面與工程交付規格的 UI/UX 案例。"
+    />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=prelaunch-audit-20260813" />
+  </head>
+  <body class="case-story-page">
+    <a class="skip-link" href="#case-content">跳到案例內容</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html?v=site-sync-20260813" aria-label="Alice Chen portfolio home">
+        <span class="brand-mark"><img src="assets/logo-ca-final-transparent.png?v=2" alt="" /></span>
+        <span>Alice Chen</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html?v=site-sync-20260813#work">作品</a>
+        <a href="index.html?v=site-sync-20260813#approach">方法</a>
+        <a href="index.html?v=site-sync-20260813#visual">視覺</a>
+        <a href="index.html?v=site-sync-20260813#about">關於</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" id="top">
+        <div class="case-hero-copy">
+          <a class="back-link" href="index.html?v=site-sync-20260813#work">回到作品</a>
+          <p class="eyebrow">Case Study 06</p>
+          <h1>七星管理處</h1>
+          <p class="case-lead">
+            讓有限的監測功能在日常監看與 2K 展示中都能被看懂，同時留下後續能沿用的畫面規則。
+          </p>
+          <div class="tag-list">
+            <span>Dashboard</span>
+            <span>2K Display</span>
+            <span>Design Tokens</span>
+            <span>AI Handoff</span>
+            <span>Component Usage</span>
+          </div>
+        </div>
+
+        <div class="case-hero-visual chising-case-visual chising-hero-dashboard-only" aria-label="七星管理處首頁儀表板">
+          <img src="assets/case-chising/chising-hero-dashboard-close.png" alt="" />
+        </div>
+      </section>
+
+      <nav class="case-anchor-nav chapter-anchor-nav" aria-label="案例章節導覽">
+        <a class="anchor-context" href="#context" data-icon="⌖"><span>專案背景</span></a>
+        <a class="anchor-challenges" href="#challenges" data-icon="!"><span>需求與痛點</span></a>
+        <a class="anchor-strategy" href="#strategy" data-icon="→"><span>設計策略</span></a>
+        <a class="anchor-screens" href="#flows" data-icon="▦"><span>畫面與成果</span></a>
+        <a class="anchor-info" href="#project-info" data-icon="i"><span>專案資訊</span></a>
+        <a class="anchor-top" href="#top" data-icon="↑"><span>TOP</span></a>
+      </nav>
+
+      <section class="case-section split-section case-story story-context" id="context" data-step="01" data-icon="⌖">
+        <span class="story-step" aria-hidden="true">01</span>
+        <div>
+          <p class="eyebrow">Context</p>
+          <h2>專案背景</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            這個專案需要同時服務管理處日常監看、公司內部 PM 溝通與高層簡報展示。畫面不能只把資料放上去，而是要讓使用者一進入首頁就能看出目前狀態、異常位置與後續追查方向。
+          </p>
+          <p>
+            因為畫面會被放到不同尺寸的桌機與大螢幕觀看，我把資訊密度、文字層級與卡片比例一起納入設計，避免只在單一尺寸看起來成立。
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-challenges" id="challenges" data-step="02" data-icon="!">
+        <span class="story-step" aria-hidden="true">02</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Needs &amp; Pain Points</p>
+          <h2>監看、展示與交付痛點</h2>
+          <p>有限的功能既要呈現豐富度，也要維持可讀性，並在不同螢幕與後續工程實作中保持一致。</p>
+        </div>
+        <div class="challenge-list">
+          <article>
+            <h3>功能不多但要豐富</h3>
+            <p>專案功能不一定多，但畫面需要有足夠的資訊量，讓高層與簡報觀看者感受到系統價值。</p>
+          </article>
+          <article>
+            <h3>豐富但不失秩序</h3>
+            <p>需要兼顧美觀與易讀，避免為了看起來功能很多而犧牲資訊層級與判讀效率。</p>
+          </article>
+          <article>
+            <h3>跨螢幕尺寸</h3>
+            <p>同一套畫面需要能放在 2K 大螢幕展示，也要能在一般桌機螢幕上正常瀏覽與操作。</p>
+          </article>
+          <article>
+            <h3>規格要能被工程接續</h3>
+            <p>色彩、字體、間距、圓角、陰影與元件使用方式需要有清楚依據，讓後續實作能對齊畫面規則。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section split-section case-story story-strategy" id="strategy" data-step="03" data-icon="→">
+        <span class="story-step" aria-hidden="true">03</span>
+        <div>
+          <p class="eyebrow">Design Strategy</p>
+          <h2>設計策略</h2>
+        </div>
+        <div class="case-text">
+          <p>
+            我把首頁儀表板視為「入口判讀架構」：先讓使用者掌握全域狀態，再透過展開面板查看局部資訊，最後用自訂儀表板支援不同展示情境。
+          </p>
+          <p>
+            視覺上以深色監控介面、明確狀態色、穩定卡片比例與圖表節奏建立系統感；交付上則用 AI 協助整理 token、README、CHANGELOG 與元件說明初稿，再由我逐項檢查命名、數值與畫面邏輯。
+          </p>
+          <ul class="strategy-points">
+            <li><strong>總覽先行</strong><span>把衛星雲圖、雷達雨量、地圖、流量與影像放在同一入口，減少來回切頁。</span></li>
+            <li><strong>細節展開</strong><span>點選卡片後在原脈絡中展開細節，讓使用者能從總覽一路追到局部資料。</span></li>
+            <li><strong>規則留下來</strong><span>把色彩、文字、間距、元件與 icon 用法整理成規格，並校對 AI 產出的交付內容。</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section case-story story-screens" id="flows" data-step="04" data-icon="▦">
+        <span class="story-step" aria-hidden="true">04</span>
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Key Screens &amp; Outcomes</p>
+          <h2>主要畫面、設計重點與成果</h2>
+          <p class="screen-note">註：部分畫面已去識別化處理，僅用於呈現設計流程、資訊架構與介面結構。</p>
+        </div>
+        <div class="screen-grid chising-screen-grid">
+          <article class="screen-shot-card featured-screen">
+            <div class="screen-shot-placeholder chising-real-shot chising-dashboard-shot" aria-hidden="true">
+              <img src="assets/case-chising/chising-dashboard-safe.png" alt="" />
+            </div>
+            <h3>首頁儀表板：支援監看與展示</h3>
+            <p><strong>設計重點：</strong>以穩定卡片比例安排監測狀態、圖表、地圖與影像，優先露出異常與關鍵數值。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>日常使用者可快速掃讀，高層在 2K 展示中也能掌握系統價值。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder chising-real-shot chising-detail-shot" aria-hidden="true">
+              <img src="assets/case-chising/chising-radar-rain-expanded-safe.png" alt="" />
+            </div>
+            <h3>雷達波累積雨量展開</h3>
+            <p><strong>設計重點：</strong>點選小格後在原脈絡中放大地圖、圖例與累積雨量資訊。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>使用者能從總覽進入局部判讀，不需要離開原本的監看任務。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder chising-real-shot chising-detail-shot" aria-hidden="true">
+              <img src="assets/case-chising/chising-custom-dashboard-safe.png" alt="" />
+            </div>
+            <h3>自訂儀表板</h3>
+            <p><strong>設計重點：</strong>讓使用者選擇畫面模式與監測卡片，並保留一致的內容預覽與管理方式。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>不同簡報或場域任務可調整展示內容，不必重新製作整套儀表板。</p>
+          </article>
+          <article class="screen-shot-card">
+            <div class="screen-shot-placeholder chising-real-shot chising-handoff-shot" aria-hidden="true">
+              <img src="assets/case-chising/chising-handoff-crop.png" alt="" />
+            </div>
+            <h3>Token 與元件交付規格</h3>
+            <p><strong>設計重點：</strong>把色彩、字級、間距、圓角、陰影與 icon 用法整理成同一份工程可讀說明。</p>
+            <p class="screen-result"><strong>形成的結果：</strong>AI 加速文件初稿，我負責檢查錯誤與畫面對應，降低設計和工程的理解落差。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-summary-grid project-info case-story story-info" id="project-info" data-step="05" data-icon="i" aria-labelledby="project-info-title">
+        <span class="story-step" aria-hidden="true">05</span>
+        <div class="project-info-heading">
+          <p class="eyebrow">Project Information</p>
+          <h2 id="project-info-title">專案資訊</h2>
+        </div>
+        <article>
+          <p class="card-label">Role</p>
+          <h3>我的角色</h3>
+          <p>負責從 wireframe 到 UI，包含首頁儀表板、展開與自訂畫面、場域 icon、設計規格與 AI 交付校對。</p>
+        </article>
+        <article>
+          <p class="card-label">Users</p>
+          <h3>主要使用者</h3>
+          <p>管理處人員、公司內部 PM，以及查看預警資訊與簡報成果的主管或決策者。</p>
+        </article>
+        <article>
+          <p class="card-label">Scope</p>
+          <h3>涵蓋範圍</h3>
+          <p>首頁儀表板、雷達波累積雨量展開、自訂儀表板、場域 icon 與工程 handoff 規格。</p>
+        </article>
+      </section>
+
+      <section class="case-section next-case">
+        <div>
+          <a class="next-home-link" href="index.html?v=site-sync-20260813#work">← 回首頁</a>
+          <h2>水利與環境監測系統群</h2>
+          <p>回到多案場的水利系統，看不同業主需求如何從 wireframe 發展成客製化監測介面。</p>
+        </div>
+        <a class="text-button next-case-link" href="case-water.html?v=site-sync-20260813">
+          <span>NEXT</span>
+          <strong>回到 Case 01 →</strong>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>歡迎透過 LinkedIn、Cake.me 或 IG 聯繫。</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/llalicell/">LinkedIn</a>
+        <a href="https://www.cake.me/me/llalicell">Cake.me</a>
+        <a href="https://www.behance.net/llalicell?locale=zh_TW">Behance</a>
+        <a href="https://www.instagram.com/llalicecreatell/">Instagram</a>
+        <img class="footer-logo" src="assets/logo-ca-final-transparent.png?v=2" alt="Alice Chen" />
+      </div>
+    </footer>
+    <script src="portfolio-projects.js?v=1"></script>
+    <script src="script.js?v=loader-registry-20260813"></script>
+  </body>
+</html>
