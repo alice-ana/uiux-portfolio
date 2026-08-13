@@ -1,3 +1,16 @@
+const googleAnalyticsId = "G-C78WSMZ4J5";
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function gtag() {
+  window.dataLayer.push(arguments);
+};
+window.gtag("js", new Date());
+window.gtag("config", googleAnalyticsId);
+
+const googleAnalyticsScript = document.createElement("script");
+googleAnalyticsScript.async = true;
+googleAnalyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
+document.head.appendChild(googleAnalyticsScript);
+
 const projects = Array.isArray(window.PORTFOLIO_PROJECTS) ? window.PORTFOLIO_PROJECTS : [];
 
 function renderProjectRegistry() {
