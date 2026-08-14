@@ -11,6 +11,18 @@ googleAnalyticsScript.async = true;
 googleAnalyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
 document.head.appendChild(googleAnalyticsScript);
 
+const microsoftClarityId = "y21dqinvtq";
+(function initializeClarity(c, l, a, r, i, t, y) {
+  c[a] = c[a] || function clarityQueue() {
+    (c[a].q = c[a].q || []).push(arguments);
+  };
+  t = l.createElement(r);
+  t.async = true;
+  t.src = `https://www.clarity.ms/tag/${i}`;
+  y = l.getElementsByTagName(r)[0];
+  y.parentNode.insertBefore(t, y);
+})(window, document, "clarity", "script", microsoftClarityId);
+
 const projects = Array.isArray(window.PORTFOLIO_PROJECTS) ? window.PORTFOLIO_PROJECTS : [];
 
 function renderProjectRegistry() {
