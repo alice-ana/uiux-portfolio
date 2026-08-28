@@ -116,22 +116,15 @@ const loaderMarkup = `
 let hasSeenLoader = false;
 try {
   hasSeenLoader = sessionStorage.getItem("alice-portfolio-loaded") === "true";
-} catch (error) {
+} catch {
   hasSeenLoader = false;
 }
-
-const revealBootedPage = () => {
-  window.requestAnimationFrame(() => {
-    document.documentElement.classList.remove("portfolio-booting");
-  });
-};
 
 if (!hasSeenLoader) {
   const siteHeader = document.querySelector(".site-header");
   if (siteHeader) siteHeader.insertAdjacentHTML("afterend", loaderMarkup);
   else document.body.insertAdjacentHTML("afterbegin", loaderMarkup);
   document.body.classList.add("portfolio-is-loading");
-  revealBootedPage();
   const loader = document.querySelector(".portfolio-loader");
   const finishLoading = () => {
     if (!loader || loader.classList.contains("is-complete")) return;
@@ -140,7 +133,7 @@ if (!hasSeenLoader) {
     window.requestAnimationFrame(() => layoutKeywordCloud());
     try {
       sessionStorage.setItem("alice-portfolio-loaded", "true");
-    } catch (error) {
+    } catch {
       // Storage may be unavailable in private or local-file browsing.
     }
     window.setTimeout(() => loader.remove(), 300);
@@ -149,28 +142,8 @@ if (!hasSeenLoader) {
   window.addEventListener("load", () => window.setTimeout(finishLoading, loadingDelay), { once: true });
   window.setTimeout(finishLoading, loadingDelay + 1800);
 } else {
-  revealBootedPage();
+  document.body.classList.remove("portfolio-is-loading");
 }
-
-const cards = document.querySelectorAll(
-  ".case-card, .proof-grid > *, .method-grid > *, .visual-tile"
-);
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-cards.forEach((card) => {
-  card.classList.add("reveal");
-  observer.observe(card);
-});
 
 const keywordButtons = document.querySelectorAll(".keyword-cloud [data-key]");
 const caseGrid = document.querySelector(".case-grid");

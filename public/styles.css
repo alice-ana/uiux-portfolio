@@ -580,16 +580,13 @@ h3 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(14px);
-  transition:
-    opacity 420ms ease,
-    transform 420ms ease;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .case-card.featured {

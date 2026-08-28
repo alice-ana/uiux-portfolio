@@ -17,6 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-Hant">
       <body>
         {children}
+        <script src="/portfolio-projects.js?v=1" defer />
+        <script src="/script.js?v=first-version-20260828" defer />
       </body>
     </html>
   );
