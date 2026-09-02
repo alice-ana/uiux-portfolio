@@ -1,15 +1,21 @@
 const googleAnalyticsId = "G-C78WSMZ4J5";
-window.dataLayer = window.dataLayer || [];
-window.gtag = window.gtag || function gtag() {
-  window.dataLayer.push(arguments);
-};
-window.gtag("js", new Date());
-window.gtag("config", googleAnalyticsId);
+const isGitHubPagesSite =
+  window.location.hostname === "alice-ana.github.io" &&
+  window.location.pathname.startsWith("/uiux-portfolio");
 
-const googleAnalyticsScript = document.createElement("script");
-googleAnalyticsScript.async = true;
-googleAnalyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
-document.head.appendChild(googleAnalyticsScript);
+if (isGitHubPagesSite) {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function gtag() {
+    window.dataLayer.push(arguments);
+  };
+  window.gtag("js", new Date());
+  window.gtag("config", googleAnalyticsId);
+
+  const googleAnalyticsScript = document.createElement("script");
+  googleAnalyticsScript.async = true;
+  googleAnalyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
+  document.head.appendChild(googleAnalyticsScript);
+}
 
 const microsoftClarityId = "y21dqinvtq";
 (function initializeClarity(c, l, a, r, i, t, y) {
