@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alice-ana.github.io/uiux-portfolio/sitemap.xml
